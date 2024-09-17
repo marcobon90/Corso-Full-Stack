@@ -12,11 +12,124 @@
     <title>Corso Full Stack</title>
 </head>
 <body>
-    <h1>Corso Full Stack</h1>
+    <div id="contenitore-principale">
+        <header>
+            <div>
+                <img src="risorse/immagini/logo-250x100.webp" alt="logo Corso full stack">
+            
+                <nav>
+                    <ul>
+                        <li><a href="pagine/tag-html.html">I tag HTML fondamentali</a></li>
+                        <li><a href="pagine/tag-semantici.html">I tag HTML semantici</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    
+        <main>
+            <h1>Benvenuti al corso Full Stack</h1>
+            <p>In questo sito puoi leggere diverse guide sullo sviluppo web</p>
 
-    <ol>
-        <li><a href="pagine/tag-html.html">I tag HTML</a></li>
-    </ol>
+            <div>
+
+                <audio src="risorse/audio/rain_sound_effect.wav" controls></audio>
+                <p>Crediti dell'audio: <a href="https://aisoundeffectgenerator.com/">Ai Sound Generator</a></p>
+            </div>
+            <div>
+                <video src="risorse/video/L'ambiente di sviluppo.mp4" 
+                width="100%" controls></video>
+            </div>
+
+            
+
+            <form>
+                <div id="form-registrazione">
+                    <div class="nessun-bordo titolo-form">
+                        Registrati
+                    </div>
+                    <div class="riquadroInput nessun-bordo">
+                        <label for="inputNome">Nome utente</label>
+                        <input type="text" name="inputNome" id="inputNome" required>
+                    </div>
+                    <div class="riquadroInput nessun-bordo">
+                        <label for="inputMail">Inserisci mail</label>
+                        <input type="text" name="inputMail" id="inputMail" required>
+                    </div>
+                    <div class="riquadroInput nessun-bordo">
+                        <label for="inputPassword">Inserisci password</label>
+                        <input type="password" name="inputPassword" id="inputPassword" required minlength="10">
+                    </div>
+    
+                    <div class="riquadroInvio nessun-bordo">
+                        <input type="submit" value="Invio">
+                    </div>
+                </div>
+            </form>
+        </main>
+
+        <br>
+        <br>
+        
+        <section>
+            <form oninput="paeseScelto.value = listaPaese.value">
+                <div>
+                    <div>
+                        <label for="listaPaese">Scegli il tuo paese</label>
+                        <input list="paesi" name="listaPaese" id="listaPaese">
+                        <datalist id="paesi">
+                            <option value="Italia">Italia</option>
+                            <option value="Francia">Francia</option>
+                            <option value="Germania">Germania</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="paeseScelto">Paese Scelto:</label>
+                        <output name="paeseScelto" id="paeseScelto"
+                         for="listaPaese"></output>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <br>
+        <br>
+
+        <section>
+            <!-- Prendi l'elemento con id risultato, 
+             converti i valori di a e b in numeri (ParseInt)
+             e riporta il loro risultato-->
+            <form oninput="risultato.value=parseInt(a.value) + parseInt(b.value)">
+                <div>
+                    <div class="titolo-form">
+                        Le addizioni
+                    </div>
+                    <div>
+                        <label for="a">Inserisci il primo numero</label>
+                        <input type="number" name="a" id="a"> 
+                    </div>
+                    <div>
+                        <label for="b">Inserisci il secondo numero</label>
+                        <input type="number" name="b" id="b">
+                    </div>
+                    <div>
+                        <label for="risultato">Somma:</label>
+                        <output name="risultato" id="risultato" for="a b">
+
+                        </output>
+                    </div>
+                </div>
+            </form>
+        </section>
+    
+
+        <footer>
+            <div>
+                <p>
+                    Corso Full Stack. Tutti i diritti sono riservati.
+                </p>
+            </div>
+        </footer>
+    </div>
 
     
     
