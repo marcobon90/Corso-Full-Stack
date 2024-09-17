@@ -1,18 +1,59 @@
-#tabella {
-    color: darkslateblue;
+#contenitore-principale {
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    align-items: center;
 }
 
-.allineaCentro {
-    text-align: center;
+header {
+    div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav {
+        nav-index: auto;
+    }
 }
 
-div {
-    /** Creiamo un bordo e allontaniamo il contenuto da esso */
-    border: 1px solid;
-    border-radius: 5px;
-    padding: 2px 20px;
+.riga {
+    display: flex;
 }
 
-.rosso {
-    color: red;
+.nessun-bordo {
+    border: none;
 }
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        padding: 2px 5px;
+        margin: 5px 5px;
+    }
+    
+    .titolo-form {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    label {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    input[type=submit] {
+        background-color: rgb(59, 161, 219);
+        border: none;
+        color: white;
+        padding: 5px 0;
+    }
+    
+}
+
