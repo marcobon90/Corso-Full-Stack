@@ -2,6 +2,10 @@
         background-color: lightgray;
     }
 
+    .margin-8sd {
+        margin: 0 8px;
+    }
+
     #programma {
         border: 1px solid gray;
         border-radius: 5px;
@@ -22,7 +26,6 @@
 
                 #riga-titoli {
                     flex: 1;
-                    margin: 0 8px;
                     display: flex;
                     align-items: center;
                 }
@@ -35,6 +38,16 @@
                 .pulsante-titolo-scheda:hover {
                     border-bottom: 2px solid royalblue;
                 }
+
+                .pulsante-titolo-scheda:active {
+                    span {
+                        border-bottom: 2px solid royalblue;
+                    }
+                }
+            }
+
+            #riga-schede {
+                box-shadow: -1px 1px 5px;
             }
 
             #riquadro-pulsanti-schede {
