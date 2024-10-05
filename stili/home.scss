@@ -1,0 +1,71 @@
+@use 'flexBox/flexBox.scss';
+
+@media screen and (min-width: 768px) {
+  body {
+    @include flexColumn-centrato();
+  }
+  #contenitore-principale {
+    width: 800px;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+@media screen and (min-width: 567px) {
+  .d-md-block {
+    display: block;
+  }
+}
+
+#contenitore-principale {
+  @include flexColumn-centrato();
+}
+
+header {
+  div {
+    display: flex;
+  }
+
+  nav {
+    nav-index: auto;
+  }
+}
+
+.riga {
+  display: flex;
+}
+
+.nessun-bordo {
+  border: none;
+}
+
+form {
+  @include flexRow-centrato();
+  border: 1px solid lightblue;
+  border-radius: 4px;
+
+  div {
+    @include flexColumn-centrato();
+    padding: 2px 5px;
+    margin: 5px 5px;
+  }
+
+  .titolo-form {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="submit"] {
+    background-color: rgb(59, 161, 219);
+    border: none;
+    color: white;
+    padding: 5px 0;
+  }
+}

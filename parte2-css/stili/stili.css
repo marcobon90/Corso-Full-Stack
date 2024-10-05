@@ -1,0 +1,159 @@
+@import url('print.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/**
+                Possiamo anche scrivere il codice qui dentro head
+                */
+@media screen and (min-width:768px) {
+
+    /**Inserisci il codice */
+
+    header {
+        div {
+            width: 1200px;
+        }
+    }
+
+    main {
+        div {
+            width: 1000px;
+        }
+    }
+
+    .riquadro-cursori {
+        display: flex;
+    }
+}
+
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px;
+    align-items: center;
+
+    .card-immagine {
+        width: 100%;
+
+        img {
+            border-radius: 10px;
+        }
+    }
+
+    .card-testo {
+        width: 100%;
+        align-items: center;
+
+        h3 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.esempio-font {
+    font-size: large;
+    font-weight: bold;
+    font-style: oblique;
+    font-variant: small-caps
+}
+
+.riquadro-cursori {
+
+    div {
+        margin: 5px;
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+    }
+
+    .riquadro-testo {
+        cursor: text;
+        background-image: url('../risorse/immagini/logo-250x100.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .riquadro-cad {
+        cursor: crosshair;
+        background-color: darkgray;
+    }
+}
+
+.riquadro {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    margin: 10px 0;
+    border: 1px solid;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: darkblue;
+        font-weight: bold;
+    }
+
+    .contenuto {
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+    }
+}
+
+.riquadro-spaziatura {
+    p {
+        margin: auto;
+    }
+}
+
+/**Stesso colore indicato in modi diversi */
+
+.colore-normale {
+    background-color: aquamarine;
+}
+
+.colore-hex {
+    background-color: #7fffd4;
+}
+
+.colore-rgba {
+    background-color: rgb(127, 255, 212, 1);
+}
+
+.colore-hsla {
+    background-color: hsl(160, 100%, 75%, 1);
+}
+
+footer {
+    background-color: black;
+
+    p {
+        color: white;
+        font-style: italic;
+        text-indent: 5%;
+    }
+}

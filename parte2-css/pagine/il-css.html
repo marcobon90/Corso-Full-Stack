@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="stili.css"> -->
+
+    <style>
+        /**
+        Possiamo anche scrivere il codice qui dentro head
+        */
+        @media screen and (min-width:768px) {
+            
+            header {
+                div {
+                    width: 1200px;
+                }
+            }
+
+            main {
+                div {
+                    width: 1000px;
+                }
+            }
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            left: 0; 
+            background-color: white;
+            
+            div {                        
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #card {
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+            height: 300px;
+            border: 1px solid black;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px;
+            align-items: center;
+
+            .card-immagine {
+                width: 100%;
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+            .card-testo {
+                width: 100%;
+                align-items: center;
+
+                h3 {
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    </style>
+    <title>Il CSS</title>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div>
+                <div class="riquadro-logo">
+                    <img src="../../risorse/immagini/logo-250x100.webp" alt="logo Corso full stack">
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="../../parte1-html/pagine/tag-html.html">I tag HTML fondamentali</a></li>
+                        <li><a href="../../parte1-html/pagine/tag-semantici.html">I tag HTML semantici</a></li>
+                        <li><a href="../pagine/FlexBox.html">I FlexBox</a></li>
+                        <li><a href="../../Esempi/app/app.html">Struttura app</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <hr>
+        </header>
+        <main>
+            <div>
+                <article>
+                    <div>
+                        <h1>Il CSS</h1>
+                        <p>Benvenuti nel corso sul CSS</p>
+                        <p class="esempio-font">Questo paragrafo ha classe esempio-font</p>
+    
+                        <h2 id="bordi">I bordi</h2>
+                        <p>Possiamo creare una card applicando un bordo arrotondato e un box-shadow</p>
+    
+                        <div id="card">
+                            <div class="card-immagine">
+                                <img src="/risorse/immagini/cosa-sito-web.png" width="200" alt="">
+                            </div>
+                            <div class="card-testo">
+                                <h3>Cosa è un sito web</h3>
+                                <p>Scopri cosa è un sito web</p>
+                            </div>
+                        </div>
+    
+                        <h2 id="cursori">I cursori</h2>
+                        <div class="riquadro-cursori">
+                            <div class="riquadro-testo" contenteditable="true">
+    
+                            </div>
+                            <div class="riquadro-cad">
+    
+                            </div>
+                        </div>
+    
+                        <h2 id="colori">I colori</h2>
+    
+                        <p>I seguenti riquadri hanno lo stesso colore ma indicato in modo diverso nel CSS. I valori sono
+                            indicati in ogni riquadro.</p>
+    
+                        <div class="riquadro colore-normale">
+                            <p>
+                                aquamarine
+                            </p>
+                        </div>
+    
+                        <div class="riquadro colore-hex">
+                            <p>
+                                #7fffd4
+                            </p>
+                        </div>
+    
+                        <div class="riquadro colore-rgba">
+                            <p>
+                                rgb(127, 255, 212, 1)
+                            </p>
+                        </div>
+    
+                        <div class="riquadro colore-hsla">
+                            <p>
+                                hsl(160, 100%, 75%, 1);
+                            </p>
+                        </div>
+    
+                        <h2 id="spaziatura">La spaziatura</h2>
+    
+                        <div class="riquadro riquadro-spaziatura">
+                            <p>margin</p>
+                            <div class="contenuto">
+    
+                            </div>
+                            <p>margin</p>
+                        </div>
+    
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <footer>
+            <div>
+                <p>
+                    Corso Full Stack. Tutti i diritti sono riservati.
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

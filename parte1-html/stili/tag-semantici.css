@@ -1,0 +1,12 @@
+header {
+    nav {
+        ol {
+            text-decoration: none;
+            list-style-type: none;
+        }
+    }
+}
+
+canvas {
+    background-color: rgb(108, 158, 233);
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cosa sono i Tag HTML ed esempi">
+
+    
+    <!-- Gli stili si trovano nella cartella sopra a dove è posizionato 
+    questo file HTML -->
+
+    <link rel="stylesheet" href="../stili/tag-html.css" media="screen">
+    <link rel="stylesheet" href="../stili/print.css" media="print">
+
+    <title>I Tag HTML</title>
+</head>
+
+<body>
+    <h1>I Tag HTML</h1>
+
+    <hr>
+
+    <!-- Possiamo usare gli elenchi per creare un'indice o un menu-->
+    <ol>
+        <li><a href="#base">I tag di base</a></li>
+        <li><a href="#secondari">I tag secondari</a></li>
+        <li><a href="#elenchi">Gli elenchi</a></li>
+        <li><a href="#tabelle">Le tabelle</a></li>
+        <li><a href="#iframe">Il tag iFrame</a></li>
+        <li><a href="#immagini">Le immagini</a></li>
+        <li><a href="#stili">Gli stili</a></li>
+    </ol>
+
+
+    <!-- I tag base-->
+    <h2 id="base">I tag di base</h2>
+    <div>
+        <p>I sottotitoli vanno da h2 a h6</p>
+        <p>Questo è un paragrafo</p>
+        <br>
+        <p>Il tag br indica al browser di andare a capo</p>
+        <p>
+            <strong>Grassetto</strong><br>
+            <em>Corsivo</em><br>
+            <u>Testo sottolineato</u><br>
+            <small>Testo più piccolo</small><br>
+            <mark>Testo evidenziato</mark><br>
+            <ins>Testo sottolineato per indicare aggiunte, diverso da sopra</ins><br>
+            <span>Lo span è un contenitore inline personalizzabile
+                <sup>Parola in Apice</sup>
+                <sub>Parola in Pedice</sub>
+            </span>
+        <blockquote>
+            Blocco dove si scrive <br>
+            una citazione lunga
+        </blockquote>
+        <q>Citazione breve</q>
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- I tag secondari -->
+
+    <h2 id="secondari">Tag secondari</h2>
+    <div>
+        <abbr title="HTML">HyperText Markup Language</abbr>
+        <br>
+        <cite>Cita un libro</cite>
+        <br>
+        <code>Scrivi un blocco di codice
+    </code>
+        <br>
+        <kbd>Scrivi l'input da tastiera</kbd>
+        <br>
+        <pre>Testo preformattato
+        va a capo senza br e segue gli
+    spazi del testo scritto nel file
+    </pre>
+        <br>
+        <samp>Samp definisce l'output di un programma</samp>
+        <br>
+        <var>var rappresenta una variabile</var>
+        <br>
+        <dfn>Definizione di un termine</dfn>
+        <br>
+        I tag <b>b</b> e <i>i</i> sono usati per rendere le parole in grassetto e in corsivo <br>
+        senza dargli enfasi
+        <br>
+    </div>
+
+
+    <hr>
+
+    <!-- Gli elenchi-->
+
+
+    <h2 id="elenchi">Gli elenchi</h2>
+
+    <div>
+        <p>Si possono creare due tipi di elenchi in HTML,<br>
+            quelli numerati <em>ol</em> e quelli non numerati <em>ul</em>.
+            <br>
+            All’interno di questi tag si possono aggiungere elementi
+            <br> alla lista con il tag <em>li</em>.
+        </p>
+        <h3>Elenchi numerati</h3>
+        <ol>
+            <li>Primo capitolo</li>
+            <li>Secondo capitolo</li>
+            <li>Terzo capitolo
+                <ol>
+                    <li>
+                        Primo sottotitolo
+                    </li>
+                    <li>Secondo sottotitolo</li>
+                </ol>
+            </li>
+            <li>Quarto capitolo</li>
+        </ol>
+        <h3>Elenchi non numerati</h3>
+        <p>Lista della spesa</p>
+        <ul>
+            <li>Pasta</li>
+            <li>Fagioli</li>
+            <li>Ceci</li>
+        </ul>
+
+    </div>
+
+    <hr>
+
+    <!-- Le tabelle -->
+
+
+    <h2 id="tabelle">Le tabelle</h2>
+
+    <div>
+        <table id="tabella" border="1" align="center">
+            <tr>
+                <th>Nome</th>
+                <th>Descrizione</th>
+            </tr>
+            <tr class="allineaCentro">
+                <td>HTML</td>
+                <td>E' il linguaggio usato per
+                    creare la struttura di
+                    un sito web</td>
+            </tr>
+            <tr class="allineaCentro">
+                <td>CSS</td>
+                <td>E' il linguaggio usato per
+                    modificare la grafica di
+                    un sito web</td>
+            </tr>
+            <tr class="allineaCentro">
+                <td>JavaScript</td>
+                <td>E' il linguaggio usato per
+                    aggiungere le funzionalità di
+                    un sito web</td>
+            </tr>
+        </table>
+    </div>
+
+    <h2 id="iframe">Il tag iframe</h2>
+
+    <div>
+        <iframe title="HomePage" src="../home.html" frameborder="1" width="400" height="400"></iframe>
+    </div>
+
+    <div>
+        <iframe title="mappaRoma" width="425" height="350"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=12.193450927734377%2C41.43654942411456%2C12.55462646484375%2C42.35854391749705&amp;layer=mapnik">
+        </iframe>
+        <br />
+        <small>
+            <a
+                href="https://www.openstreetmap.org/#map=10/41.8992/12.3740">
+                Visualizza mappa ingrandita
+            </a>
+        </small>
+    </div>
+
+    <h2 id="immagini">Le immagini</h2>
+        <img 
+            title="Cosa è un sito web" 
+            src="../risors/immagini/cosa-sito-web.png" 
+            alt="Cosa è un sito web"
+            width="500"
+        >
+        
+    <h2 id="stili">Gli stili</h2>
+    <div>
+        <p> Possiamo applicare uno o più stili ad un elemento HTML.
+            Ad esempio scriviamo una parola in 
+            <span style="color: red;">rosso</span>.
+            Gli stili andrebbero inseriti in un file a parte.
+            Questo è solo un esempio.
+        </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<style>
+    /*Stili che valgono per tutti i dispositivi
+    Colori di sfondo e altezze fisse
+    */
+    html {
+        background-color: lightgray;
+    }
+
+    #programma {
+        border: 1px solid gray;
+        border-radius: 5px;
+        #header {
+            height: 50px;
+            border: 1px solid red;
+        }
+
+        #area-schede {
+            height: 140px;
+            border: 1px solid red;
+
+            #riquadro-titoli-schede {
+                height: 40px;
+                display: flex;
+                flex-direction: column;
+
+                #riga-titoli {
+                    flex: 1;
+                    margin: 0 8px;
+                    border: 1px solid blue;
+                    display: flex;
+                }
+            }
+
+            #riquadro-pulsanti-schede {
+                height: 100px;
+                background-color: white;
+            }
+        }
+
+        #area-principale {
+            margin-top: 20px;
+
+            .barra-sinistra,
+            .barra-propriety {
+                background-color: aquamarine;
+            }
+    
+            .editor {
+                background-color: white;
+            }
+        }
+
+        #barra-inferiore {
+            height: 25px;
+            border-top: 1px solid gray;
+        }
+    }
+
+    /*Stili per schermi grandi*/
+
+    @media screen and (min-width:768px) {
+
+        #programma {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #area-principale, #barra-inferiore {
+            display: flex;
+        }
+
+
+        #area-principale {
+            flex: 1;
+            
+            .barra-sinistra,
+            .barra-propriety {
+                flex: 0 0 200px;
+            }
+
+            .editor {
+                flex: 1;
+            }
+        }
+    }
+
+    /*Stili per dispositivi mobili*/
+
+    @media screen and (max-width:768px) {
+
+        #programma {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #area-principale, #barra-inferiore {
+            display: flex;
+        }
+
+
+        #area-principale {
+            flex: 1;
+            flex-direction: column;
+            
+            .barra-sinistra,
+            .barra-propriety {
+                flex: 0 0 100px;
+            }
+
+            .editor {
+                flex: 1;
+            }
+        }
+    }
+</style>
+<div id="programma"> 
+    <div id="header">
+
+    </div>
+    <div id="area-schede">
+        <div id="riquadro-titoli-schede">
+            <div id="riga-titoli">
+                <span>Qui vanno inseriti i  menu</span>
+            </div>
+        </div>
+        <div id="riquadro-pulsanti-schede">
+<span>Qui vanno inseriti i pulsanti</span>
+        </div>
+    </div>
+    <div id="area-principale">
+        <div class="barra-sinistra">
+    
+        </div>
+        <div class="editor">
+    <span>Qui si lavora</span>
+        </div>
+        <div class="barra-propriety">
+    
+        </div>
+    </div>
+    <div id="barra-inferiore">
+        <span>Crediti e altre opzioni</span>
+    </div>
+</div>

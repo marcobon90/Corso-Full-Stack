@@ -1,0 +1,165 @@
+    html {
+        background-color: lightgray;
+    }
+
+    .margin-8sd {
+        margin: 0 8px;
+    }
+
+    #programma {
+        border: 1px solid gray;
+        border-radius: 5px;
+
+        #header {
+            height: 50px;
+            border: 1px solid red;
+        }
+
+        #area-schede {
+            height: 140px;
+            border: 1px solid red;
+
+            #riquadro-titoli-schede {
+                height: 30px;
+                display: flex;
+                flex-direction: column;
+
+                #riga-titoli {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                }
+
+                .pulsante-titolo-scheda {
+                    border: none;
+                    background-color: transparent;
+                }
+
+                .pulsante-titolo-scheda:hover {
+                    border-bottom: 2px solid royalblue;
+                }
+
+                .pulsante-titolo-scheda:active {
+                    span {
+                        border-bottom: 2px solid royalblue;
+                    }
+                }
+            }
+
+            #riga-schede {
+                box-shadow: -1px 1px 5px;
+            }
+
+            #riquadro-pulsanti-schede {
+                height: 100px;
+                background-color: white;
+                display: flex;
+                padding: auto;
+                border-radius: 5px;
+                z-index: 2;
+
+                .riquadroComandi {
+                    margin: 5px;
+                    height: 90%;
+
+                    .nome {
+                        position: relative;
+                        top: 45px;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 12px;
+                    }
+                }
+
+                .ribbon-divider-wrapper {
+                    display: inline-block;
+                    margin: 2px 3px;
+                    /* Crea una linea verticale */
+                }
+
+                .ribbon-bottom-bar-divider {
+                    display: block;
+                    height: 98%;
+                    border-left: 1px solid #a7a7a7c4;
+                    /* Crea una linea verticale */
+                }
+            }
+        }
+
+        #area-principale {
+            margin-top: 20px;
+
+            .barra-sinistra,
+            .barra-propriety {
+                background-color: aquamarine;
+            }
+
+            .editor {
+                background-color: white;
+            }
+        }
+
+        #barra-inferiore {
+            height: 25px;
+            border-top: 1px solid gray;
+        }
+    }
+
+
+
+    @media screen and (min-width:768px) {
+
+        #programma {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #area-principale,
+        #barra-inferiore {
+            display: flex;
+        }
+
+
+        #area-principale {
+            flex: 1;
+
+            .barra-sinistra,
+            .barra-propriety {
+                flex: 0 0 200px;
+            }
+
+            .editor {
+                flex: 1;
+            }
+        }
+    }
+
+    @media screen and (max-width:768px) {
+
+        #programma {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #area-principale,
+        #barra-inferiore {
+            display: flex;
+        }
+
+
+        #area-principale {
+            flex: 1;
+            flex-direction: column;
+
+            .barra-sinistra,
+            .barra-propriety {
+                flex: 0 0 100px;
+            }
+
+            .editor {
+                flex: 1;
+            }
+        }
+    }

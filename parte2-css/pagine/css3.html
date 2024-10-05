@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le Funzionalità avanzate di CSS3">
+    <title>CSS3:Funzionalità avanzate</title>
+</head>
+<style>
+    pre {
+
+        font-family: 'Courier New', Courier, monospace;
+
+        background-color: black;
+        color: rgb(137, 226, 241);
+
+        .selettore {
+            color: goldenrod;
+        }
+    }
+</style>
+
+<body>
+    <h1>CSS3: Funzionalità avanzate</h1>
+    <h2 id="transizioni">Transizioni</h2>
+    <pre>
+
+        <span class="selettore">#transizione</span> {
+            width: 100px;
+        height: 100px;
+        background-color: red;
+        transition: width 2s, height 2s, backgroun-color 2s;
+    }
+            
+    <span class="selettore">#transizione:hover</span> {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+    }
+</pre>
+
+    <style>
+        #rect-tr {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        #rect-tr:hover {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+        }
+
+        .transizione-2s {
+            transition: width 2s, height 2s, backgroun-color 2s;
+        }
+    </style>
+    <div id="rect-tr" class="transizione-2s">
+
+    </div>
+
+    <h2 id="animazioni">Animazioni</h2>
+    <style>
+@-webkit-keyframes riquadroanimato {
+    0% { -webkit-transform: rotate(0deg) translateX(0); }
+    25% { -webkit-transform: rotate(20deg) translateX(0); }
+    50% { -webkit-transform: rotate(0deg) translateX(500px); }
+    55% { -webkit-transform: rotate(0deg) translateX(500px); }
+    70% { -webkit-transform: rotate(0deg) translateX(500px); background-color: rgb(21, 150, 150); }
+    100% { -webkit-transform: rotate(-360deg) translateX(0); }
+}
+
+@keyframes riquadroanimato {
+    0% { transform: rotate(0deg) translateX(0); }
+    25% { transform: rotate(20deg) translateX(0); }
+    50% { transform: rotate(0deg) translateX(500px); }
+    55% { transform: rotate(0deg) translateX(500px); }
+    70% { transform: rotate(0deg) translateX(500px); background-color: rgb(21, 150, 150); }
+    100% { transform: rotate(-360deg) translateX(0); }
+}
+
+#riquadro-animato {
+    width: 70px;
+    height: 47px;
+    padding: 10px;
+    background-color: rgb(100, 151, 23);
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-animation: riquadroanimato 5s ease 0 1 normal none;
+    animation: riquadroanimato 5s ease 0 1 normal none;
+    will-change: transform;
+}
+
+    </style>
+    <div id="riquadro-animato">
+        CSS
+    </div>
+</body>
+
+</html>

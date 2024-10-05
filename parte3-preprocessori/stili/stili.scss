@@ -1,0 +1,15 @@
+@import url('variabili.scss');
+
+div {
+    background-color: $colore-principale;
+}
+
+
+@mixin dimensioni($lunghezza, $altezza:auto) {
+    width: $lunghezza;
+    height: $altezza;
+}
+
+.riquadro-md {
+    @include dimensioni(768px);
+}
