@@ -14,4 +14,4 @@ class Pulsante extends HTMLElement {
     }
 }
 
-customElements.define('pulsante', Pulsante)
+customElements.define('mio-pulsante', Pulsante)

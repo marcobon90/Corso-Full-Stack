@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Components</title>
 </head>
-<body>
-    <pulsante></pulsante>
 
-    <script src="componenti/pulsante/pulsante.js"></script>
-   
+<body>
+    <template id="pulsante-template">
+        <style>
+            :root {
+                border: 1px solid;
+                border-radius: 5px;
+                margin: 10px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+        </style>
+    </template>
+    <style>
+        .giallo {
+            background-color: yellow;
+        }
+    </style>
+
+    <pulsante>
+        Ciao
+    </pulsante>
+
+    <script>
+        let pulsante;
+
+        const template = document.getElementById('pulsante-template')
+        const templateClonato = template.content.cloneNode(true)
+        
+        pulsante.attachShadow({mode:'closed'}).appendChild(templateClonato)
+        pulsante.addEventListener('click',() => {
+            pulsante.classList.add('giallo')
+        })
+
+        customElements.define('pulsante',pulsante)
+    </script>
+
 </body>
+
 </html>
