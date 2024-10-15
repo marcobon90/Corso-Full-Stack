@@ -1,0 +1,43 @@
+<template id="form-template">
+    <style>
+        form {
+            border: 1px solid blue;
+            width: 300px ;
+            margin: auto;
+            padding: 10px;
+
+            input {
+                display: block;
+                width: 50%;
+                margin: auto;
+            }
+        }
+    </style>
+    <form action="">
+        <input type="text" name="inputNome" id="inputNome" value="Inserisci Nome">
+    </form>
+</template>
+
+<!-- <form-infodit></form-infodit> -->
+<!--Inserisci qui un form predefinito e vedi che non si applica lo stile del template-->
+
+<!--Inserisci qui un form-infodit e avrai l'esatta copia del primo-->
+
+<!-- <script>
+    const formInfodit = customElements.define('form-infodit',
+        class FormInfodit extends HTMLElement {
+            constructor() {
+                super()
+
+                //Creazione dello shadow Dom
+                const shadow = this.attachShadow({ mode: 'closed' })
+
+                //Prendiamo il contenuto del template e lo copiamo su una variabile 
+                const template = document.getElementById('form-template').content.cloneNode(true);
+                
+                //Attacchiamo la copia del template sullo shadow DOM
+                shadow.appendChild(template)
+            }
+        }
+    )
+</script> -->

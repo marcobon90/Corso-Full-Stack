@@ -1,0 +1,76 @@
+<style>
+    @media screen and (min-width:600px) {
+        body {
+            width: 500px;
+            margin: auto;
+
+            article {
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                margin: auto;
+
+                .riga-introduzione{
+                    display: grid;
+                    grid-template-columns: auto auto;
+
+                    .informazioni-introduttivi {
+                        background-color: antiquewhite;
+                        border: 1px solid;
+                        padding: 10px;
+
+                        p {
+                            text-align: center;
+                        }
+
+                        ul {
+                            list-style-type: none;
+                            position: relative;
+                            left: -12;
+                        }
+                    }
+                }
+            }
+        }
+    }
+</style>
+
+<div class="contenitore">
+    <header>
+        <img src="../../risorse/immagini/logo-250x100.webp" alt="">
+    </header>
+    <main>
+        <article>
+            <h1>Titolo blog</h1>
+            <div class="riga-introduzione">
+                <div class="blocco-introduzione">
+                    <p>Inserisci introduzione</p>
+                    <p>Inserisci introduzione</p>
+                    <p>Inserisci introduzione</p>
+                    <h2>Sottotitolo</h2>
+                    <p>Paragrafo</p>
+                    <p>Paragrafo</p>
+                    <p>Paragrafo</p>
+                    <p>Paragrafo</p>
+                </div>
+                <div class="informazioni-introduttivi">
+                    <p>Informazioni articolo</p>
+                    <ul>
+                        <li>
+                            Nome autore: 
+                        </li>
+                        <li>
+                            Data: 
+                        </li>
+                        <li>
+                            Categoria: 
+                        </li>
+                        <li>
+                            Tag: 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+</div>

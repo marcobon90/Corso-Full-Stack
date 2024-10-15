@@ -1,0 +1,11 @@
+div {
+    width: max-content;
+    border: 1px solid;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+.giallo {
+    background-color: yellow;
+}

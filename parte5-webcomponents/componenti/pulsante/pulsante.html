@@ -1,15 +1,41 @@
 <template id="pulsante-template">
-    <style>
-        :host {
-            border: 1px solid;
-            border-radius: 5px;
-            margin: 10px;
-            padding: 5px 10px;
+    <link rel="stylesheet" href="pulsante.css">
+    <div>
+        <span>Clicca qui</span>
+    </div>
+</template>
+<mio-pulsante>
+
+</mio-pulsante>
+
+<span>Span fuori dallo shadow DOM</span>
+<script>
+    function AttaccaShadow(elemento, aperto = false) {
+        if (!aperto) {
+            return elemento.attachShadow({mode:'closed'})
+        } else {
+            return elemento.attachShadow({mode:'open'})
+        }
+    }
+
+    function OttieniTemplate(id) {
+        return document.getElementById(id)
+    }
+
+    class Pulsante extends HTMLElement {
+        constructor() {
+            super()
+
+            const shadow = AttaccaShadow(this)
+            const template = OttieniTemplate('pulsante-template').content
+
+            shadow.appendChild(template)
+
+            shadow.addEventListener('click',() => shadow.querySelector('div').classList.add('giallo'))
         }
 
-        :host(giallo) {
-            background-color: yellow;
-        }
-    </style>
-    <slot></slot>
-</template>
+        
+    }
+
+    customElements.define('mio-pulsante', Pulsante)
+</script>
