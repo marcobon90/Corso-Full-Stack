@@ -1,0 +1,25 @@
+@use 'variabili';
+
+@function Ottieni_Valore_Da_Sottomappa($sottomappa, $valore_da_cercare) {
+    @return map-get($map: map-get(variabili.$tipo_schermo, $sottomappa), $key: $valore_da_cercare);
+}
+
+@function Ottieni_Dimensioni_Schermo($nome_tipo_schermo) {
+  @return Ottieni_Valore_Da_Sottomappa($nome_tipo_schermo, dimensioni );
+}
+
+@function Ottieni_Lunghezza_Contenitore($nome_tipo_schermo) {
+  @return Ottieni_Valore_Da_Sottomappa($nome_tipo_schermo, lunghezza_contenitore );
+}
+
+@mixin Gestisci_Dimensioni($tipo_schermo) {
+    $media_query: Ottieni_Dimensioni_Schermo($tipo_schermo);
+    $lunghezza_contenitore: Ottieni_Lunghezza_Contenitore($tipo_schermo);
+  @media (min-width: #{$media_query}) {
+    width: #{$lunghezza_contenitore};
+    @content;
+    margin: auto;
+  }
+}
+
+

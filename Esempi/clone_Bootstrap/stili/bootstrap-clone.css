@@ -1,0 +1,40 @@
+.contenitore {
+  width: 100%;
+  padding: 0 12px;
+  background-color: red;
+}
+@media (min-width: 576px) {
+  .contenitore {
+    width: 540px;
+    width: 540px;
+    margin: auto;
+  }
+}
+@media (min-width: 768px) {
+  .contenitore {
+    width: 720px;
+    width: 720px;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .contenitore {
+    width: 960px;
+    width: 960px;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .contenitore {
+    width: 1140px;
+    width: 1140px;
+    margin: auto;
+  }
+}
+@media (min-width: 1400px) {
+  .contenitore {
+    width: 1320px;
+    width: 1320px;
+    margin: auto;
+  }
+}/*# sourceMappingURL=bootstrap-clone.css.map */
