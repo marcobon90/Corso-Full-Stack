@@ -1,0 +1,23 @@
+$tipo_schermo: (
+  schermo_piccolo: (
+    dimensioni: 576px,
+    lunghezza_contenitore: 540px 
+  ),
+  schermo_medio: (
+    dimensioni: 768px,
+    lunghezza_contenitore: 720px
+  ),
+  schermo_grande: (
+    dimensioni: 992px,
+    lunghezza_contenitore: 960px
+  ),
+  schermo_molto_grande: (
+    dimensioni: 1200px,
+    lunghezza_contenitore: 1140px
+  ),
+  schermo_max: (
+    dimensioni: 1400px,
+    lunghezza_contenitore: 1320px 
+  )
+  
+);

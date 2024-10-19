@@ -5,35 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="./stili/bootstrap-clone.css">
     <title>Guida a Bootstrap</title>
 </head>
 
 <body>
     <style>
-        .container {
-            border: 1px solid;
-        }
+
     </style>
     <div class="container">
         <main>
             <article>
                 <h1>Guida a Bootstrap</h1>
-            
+                <div>
+                    <p>
+                        Molti web template utilizzano Bootstrap, un framework front-end che fornisce una serie di
+                        strumenti e stili CSS che ci
+                        aiutano a creare siti e applicazioni web in modo rapido: basta assegnare agli elementi una
+                        classe con il nome della
+                        caratteristica che vogliamo dargli.
+                    </p>
+                    <p>
+                        Tuttavia, l’uso di Bootstrap o framework simili presentano un problema: richiede il caricamento
+                        di tutti gli stili anche
+                        di quelli che non usiamo nel codice HTML e questo penalizzerà il nostro sito.
+                    </p>
+                    <p>
+                        La guida seguente riguardo Bootstrap è principalmente dimostrativa e ci permette di capire come
+                        realizzare qualcosa di
+                        simile. Ma se si desidera creare siti professionali, e con il minore numero di segnalazioni da
+                        parte del browser e dei
+                        motori di ricerca il suo uso è sconsigliato per i motivi detti sopra.
+                    </p>
+                </div>
+                <h2>Installazione</h2>
+                <div>
+                    <p>
+                        Possiamo installare Bootstrap in due modi: tramite CDN o salvare i file nel progetto
+                        In questa guida sto usando il CDN.
+                    </p>
+                    <h3>Tramite CDN</h3>
+                    <p>
+                        E’ il metodo più veloce e leggero, in quanto i file di Bootstrap sono distribuiti su server
+                        esterni
+                        usati anche da altri
+                        siti web. Se l’utente ha già visitato un sito che usa il nostro stesso framework avrà già i file
+                        nella cache, memoria
+                        temporanea, del browser, e i tempi di caricamento saranno minori. Per aggiornare Boostrap a una
+                        nuova versione basta
+                        modificare l’url della CDN.
+                    </p>
+                    <p>
+                        Gli svantaggi di usare una CDN è che nel caso ci siano problemi, il sito potrebbe non funzionare
+                        correttamente; inoltre, abbiamo meno controllo sui file, nel caso volessimo fare delle modifiche
+                        personalizzate.
+                    </p>
+                    <h3>Installazione locale</h3>
+                    <p>
+                        Il vantaggio di avere tutti i file di Bootstrap nel nostro progetto è che possiamo modificare i
+                        file a seconda delle
+                        nostre preferenze. Tuttavia, dovremo scaricare manualmente le nuove versioni che
+                        sovrascriveranno le modifiche
+                        effettuate. Inoltre, i file devono essere scaricati ogni volta dal nostro server ai vari utenti.
+
+                    </p>
+                    <p>
+                        Ha senso avere tutti i file di Bootstrap nel nostro progetto quando vogliamo gestirlo tramite
+                        SASS. Grazie al
+                        preprocessore possiamo importare soltanto le parti di Bootstrap che ci interessano, modificare
+                        le sue variabili e creare
+                        funzioni personalizzate senza dovere modificare il suo codice sorgente. In questo modo il nostro
+                        sito non sarà
+                        appesantito dal codice di stile che non utilizziamo perché incorporeremo nella pagina web
+                        soltanto il CSS compilato da
+                        SASS.
+
+                    </p>
+                </div>
+
+
             </article>
         </main>
-    
-        <footer>
-            <div id="script">
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    </div>
+    <div class="provaColore">
+
+    </div>
+    <footer>
+        <div id="script">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
                 integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
                 crossorigin="anonymous">
                 </script>
-    
-            </div>
-        </footer>
-    </div>
-    
+
+        </div>
+    </footer>
+
 </body>
 
 </html>
